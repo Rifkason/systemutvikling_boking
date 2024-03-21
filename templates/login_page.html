@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body class="Login_body">
+    <form action="/login" method="post" class="Login_form">
+
+        <div class="Button_wrapper">
+            
+            <input type="submit" value="LOG IN" class="cta">
+        </div>
+
+        <div class="input_wrapper">
+            <div class="Username">
+                <img class="icon_1" src="{{url_for('static', filename='Icon/icon1.png')}}" alt="icon for username">
+                
+                <input type="text" placeholder="Username" name="Username" class="input_filed">
+            </div>
+
+            <div class="passord">
+                <img class="icon_2" src="{{url_for('static', filename='Icon/icon2.png')}}" alt="icon for passord">
+                <input types="passord" placeholder="passord" name="pw" class="input_filed">
+                
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
